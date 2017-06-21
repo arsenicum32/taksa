@@ -1,0 +1,4 @@
+setInterval(_=>{
+  var t = $('#t').text()
+  $('#t').text(t + " hello")
+}, 400)

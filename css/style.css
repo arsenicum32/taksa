@@ -1,0 +1,55 @@
+body {
+  background: #eee;
+  margin: 0;
+  font-family: Pragmatica;
+}
+.a {
+  /*position: absolute;*/
+  right: 30px;
+  top: 50vh;
+
+}
+.a a{
+  font-size: 1.2em;
+  color: orange;
+}
+i {
+  position: absolute;
+  font-weight: normal;
+  font-style: normal;
+  top: 30px;
+  right: 30px;
+  width: 30vw;
+  font-size: 0.8em;
+}
+.div {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+marquee {
+  font-size: 1.2em;
+  position: absolute;
+  width: 100vw;
+}
+#t {
+  bottom: 20px;
+  left: 0;
+  width: 200px;
+}
+#s {
+  bottom: 40px;
+  left: 0;
+}
+#f {
+  bottom: 60px;
+  left: 0;
+}
