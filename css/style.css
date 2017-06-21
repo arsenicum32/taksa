@@ -1,7 +1,7 @@
 body {
   background: #eee;
   margin: 0;
-  font-family: Pragmatica;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .a {
   /*position: absolute;*/
@@ -9,9 +9,32 @@ body {
   top: 50vh;
 
 }
+.blink {
+  animation: blinker .3s linear infinite;
+}
+
+@keyframes blinker {
+  50% { background: orange; }
+}
 .a a{
   font-size: 1.2em;
   color: orange;
+}
+#tp{
+  position: absolute;
+  top: 0;
+  height: 40px;
+  line-height: 40px;
+  font-weight: normal;
+  font-size: 1.2em;
+  width: 100%;
+
+}
+#tp a{
+  color: black;
+}
+#tp a:nth-child(2){
+  float: right;
 }
 i {
   position: absolute;
@@ -22,9 +45,33 @@ i {
   width: 30vw;
   font-size: 0.8em;
 }
+#t{
+  width: 200px;
+}
+#b{
+  width: 270px;
+  height: 500px;
+  background: white;
+  border: 10px solid white;
+  position: relative;
+  left: 5px;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .div {
   width: 100vw;
   height: 100vh;
+  background: url(../img/phone-01.png) no-repeat center center;
+  background-size: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,12 +85,11 @@ i {
 marquee {
   font-size: 1.2em;
   position: absolute;
-  width: 100vw;
+  width: 100%;
 }
-#t {
+#tt {
   bottom: 20px;
   left: 0;
-  width: 200px;
 }
 #s {
   bottom: 40px;
